@@ -1,0 +1,6 @@
+; $Id$
+name = Islandora Journal Solution Pack
+description = Provides a Content Model and Collection for scholarly journals.
+dependencies[] = fedora_repository
+dependencies[] = countries_api
+core = 6.x
