@@ -31,6 +31,20 @@ function islandora_journal_sp_required_fedora_objects() {
           'datastream_file' => "$module_path/xml/JOURNAL_SP_CMODEL.xml",
         ),
         array(
+          'pid' => 'islandora:journalIssueCModel',
+          'dsid' => 'ISLANDORACM',
+          'label' => 'Islandora Journal Issue Content Model',
+          'cmodel' => 'fedora-system:ContentModel-3.0',
+          'datastream_file' => "$module_path/xml/JOURNAL_ISSUE_SP_CMODEL.xml",
+        ),
+        array(
+          'pid' => 'islandora:publisherCModel',
+          'dsid' => 'ISLANDORACM',
+          'label' => 'Islandora Journal Publisher Content Model',
+          'cmodel' => 'fedora-system:ContentModel-3.0',
+          'datastream_file' => "$module_path/xml/JOURNAL_PUBLISHER_SP_CMODEL.xml",
+        ),
+        array(
           'pid' => 'islandora:journalCollection',
           'label' => 'Islandora Journal Collection',
           'cmodel' => 'islandora:collectionCModel',
