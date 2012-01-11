@@ -4,7 +4,9 @@ function islandora_journal_sp_install() {
   /* load forms */
   module_load_include('inc','fedora_repository','fedora_repository.solutionpacks');
   $path = drupal_get_path('module','islandora_journal_sp');
-  solution_pack_add_form('Islandora Journal MODS Form',"$path/xml/mods-journal.xml");
+  $dom = new DOMDocument();
+  $dom->load("$path/xml/mods-journal.xml");
+  solution_pack_add_form('Islandora Journal MODS Form',$dom->saveXML());
   solution_pack_add_form_association('islandora:journalCModel','Islandora Journal MODS Form');
 }
 
